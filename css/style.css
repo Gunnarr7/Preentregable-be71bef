@@ -1,7 +1,7 @@
 #grilla{
     display: grid;
     grid-template-columns:1fr;
-    grid-template-rows:60px 700px 900px 1880px 250px ;
+    grid-template-rows:60px 650px 900px 1880px 250px ;
     grid-template-areas:
     "nav nav nav"
     "slide slide slide"
@@ -98,9 +98,9 @@ body{ font-family: 'Nunito', sans-serif;
 }
 .envios{
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 60px;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     margin-left: 20px;
     margin-inline: 40px; 
 }
@@ -109,11 +109,13 @@ body{ font-family: 'Nunito', sans-serif;
     height: auto;
     width: 333px;
     padding-inline: 16.5px;
-    margin-left: 35px;
+    margin-left: 60px;
     border: gray solid 3px;
+    margin-top: 60px;
     
 
 }
+
 .maqsini-text{
     display: flex;
     flex-wrap: wrap;
@@ -122,15 +124,6 @@ body{ font-family: 'Nunito', sans-serif;
     justify-content: space-around;
 
 }
-.maqsini-text a{
-    color: black;
-    font-size: 30px;
-    font-weight:lighter;
-    background-color: lightgray;
-    text-decoration: none;
-    
-}
-
 .slogan-1{
     text-align: center;
     margin: 50px 0px 50px 0px;
@@ -192,7 +185,7 @@ color: white;
 #grilla-p{
     display: grid;
     grid-template-columns:1fr 1fr;
-    grid-template-rows:60px 2700px 2300px 2300px 250px ;
+    grid-template-rows:60px 2700px 2300px 2300px 3500px ;
     grid-template-areas:
     "nav nav nav"
     "productos productos productos"
@@ -386,7 +379,7 @@ footer{
     margin: 50px 0px 0px 0px;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:500px){
     .envios{
         flex-direction: column;
         
