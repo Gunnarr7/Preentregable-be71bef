@@ -1,0 +1,119 @@
+
+
+
+
+section#prods {
+
+    div.maqsini-img {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        text-align: center;
+        flex-wrap: wrap;
+
+        div.img-envios {
+
+            img {
+                height: auto;
+                width: 333px;
+                padding-inline: 16.5px;
+                border: gray solid 3px;
+                margin-top: 10px;
+
+
+            }
+
+            h3 {
+                font-size: 22px;
+                color: gray;
+                font-weight: bold;
+                padding-top: 10px;
+            }
+        }
+    }
+
+    div.slogan-1 {
+        text-align: center;
+        margin: 50px 0px 50px 0px;
+        font-size: 20px;
+    }
+
+    div.maquinas4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+
+        img {
+            height: auto;
+            width: 250px;
+            padding-right: 25px;
+            padding-left: 25px;
+            margin-right: 5px;
+            margin-left: 5px;
+            margin-bottom: 30px;
+            border: gray solid 2px;
+        }
+    }
+}
+
+section#vision {
+   
+
+    div.visionini {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, 600px);
+        justify-content: center;
+        align-items: center;
+        
+
+        div.vitext {
+            font-size: 19px;
+            margin: 20px;
+
+            a {
+                color: white;
+                padding: 10px;
+                background-color: black;
+
+            }
+
+            div.conocer-mas {
+                display: flex;
+                flex-wrap: wrap;
+
+
+            }
+        }
+    }
+
+    img.slide-img {
+        height: auto;
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 5px;
+    }
+
+    .video {
+        width: 100%;
+        height: 500px;
+    }
+
+    div.ig-padre {
+        text-align: center;
+        margin: 50px;
+        font-size: 20px;
+        flex-wrap: wrap;
+
+        div.igini {
+            a {
+                font-size: 35px;
+                font-weight: bold;
+                text-decoration: none;
+                color: grey;
+            }
+        }
+    }
+}

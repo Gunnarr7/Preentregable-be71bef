@@ -1,0 +1,251 @@
+@media all and (min-width:600px) and (max-width:1110px) {
+    #grilla {
+        grid-template-rows: auto auto auto 2100px auto;
+    }
+
+    .visionini {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 600px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+    }
+
+    .vitext {
+        font-size: 20px;
+        margin: 20px;
+    }
+
+    #vision,
+    .slide {
+        height: 50%;
+        width: 100%;
+    }
+
+    .video {
+        width: 100%;
+        height: 500px;
+
+    }
+
+    #grilla-p {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 5000px 3000px 3000px 500px;
+        grid-template-areas:
+            "nav nav nav"
+            "productos productos productos"
+            "vision vision vision"
+            "slide slide slide"
+            "footer footer footer";
+
+
+    }
+
+    .border-p {
+        border: none;
+    }
+
+    header-p {
+        grid-area: nav;
+    }
+
+    #slide-p {
+        grid-area: slide;
+    }
+
+    #prods-p {
+        grid-area: productos;
+    }
+
+
+    #vision-p {
+        grid-area: vision;
+    }
+
+    footer-p {
+        grid-area: footer;
+    }
+
+    .cortadoras {
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cortadoras h3 {
+        text-align: center;
+    }
+
+    .cortadoras p {
+        margin-left: 5px;
+    }
+
+
+    footer {
+        height: 600px;
+    }
+
+    .padre {
+        display: grid;
+        width: 100%;
+        grid-template-rows: 500px 100px;
+        grid-template-columns: 1fr;
+        gap: 8px;
+
+    }
+
+    .conteiner {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+
+
+    }
+
+    .slide-m {
+        min-width: 600px;
+        max-width: 100%;
+
+    }
+
+}
+
+@media all and (min-width:360px) and (max-width:599px) {
+
+    #grilla {
+        grid-template-rows: auto auto auto 25% auto;
+    }
+
+    div.visionini {
+        display: grid;
+        grid-template-rows: repeat(2, 300px);
+        grid-template-columns: minmax(350px, 599px);
+        justify-content: center;
+        align-items: center;
+        gap: 1px;
+    }
+
+
+    .vision-img {
+        min-width: 350px;
+        width: 100%;
+
+    }
+
+    div.vitext {
+        font-size: 10px;
+        margin: 5px;
+    }
+
+    #vision,
+    .slide-img {
+        min-width: 350px;
+        width: 100%;
+        height: 40%;
+    }
+}
+
+.video {
+    width: 100%;
+    height: 40%;
+
+
+
+    #grilla-p {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 5000px 3000px 3000px 500px;
+        grid-template-areas:
+            "nav nav nav"
+            "productos productos productos"
+            "vision vision vision"
+            "slide slide slide"
+            "footer footer footer";
+
+
+    }
+
+    .border-p {
+        border: none;
+    }
+
+    header-p {
+        grid-area: nav;
+    }
+
+    #slide-p {
+        grid-area: slide;
+    }
+
+    #prods-p {
+        grid-area: productos;
+    }
+
+
+    #vision-p {
+        grid-area: vision;
+    }
+
+    footer-p {
+        grid-area: footer;
+    }
+
+    .cortadoras {
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cortadoras h3 {
+        text-align: center;
+    }
+
+    .cortadoras p {
+        margin-left: 3px;
+        font-size: 15px;
+    }
+
+    .cortadoras img {
+        min-width: 340px;
+        width: 100%;
+    }
+
+
+    footer {
+        height: 900px;
+    }
+
+    div.padre {
+        width: 100%;
+
+        display: grid;
+        grid-template-rows: 800px 100px;
+        grid-template-columns: 1fr;
+        gap: 8px;
+
+    }
+
+    div.conteiner {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+
+
+    }
+
+    .slide-m {
+        min-width: 350px;
+
+
+    }
+
+    .img-pago {
+        min-width: 340px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,620 @@
+#grilla {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 800px 1800px 250px;
+    grid-template-areas:
+        "nav nav nav"
+        "slide slide slide"
+        "productos productos productos"
+        "vision vision vision"
+        "footer footer footer";
+
+
+}
+
+.border {
+    border: none;
+}
+
+header {
+    grid-area: nav;
+}
+
+#slide {
+    grid-area: slide;
+}
+
+#prods {
+    grid-area: productos;
+}
+
+
+#vision {
+    grid-area: vision;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    background-color: black;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navini a {
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16.42px;
+    margin-right: 75.5px;
+    margin-left: 21px;
+    text-decoration: none;
+}
+
+.navini {
+    padding-right: 50px;
+    padding-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.logo {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 3px;
+    margin-left: 30px;
+    border-bottom: 2px solid black;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.slide-img {
+    width: 100%;
+}
+
+
+.img-envios h3 {
+    font-size: 22px;
+    color: gray;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+
+
+
+.maqsini-img {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.maqsini-img img {
+    height: auto;
+    width: 333px;
+    padding-inline: 16.5px;
+    border: gray solid 3px;
+    margin-top: 10px;
+}
+
+.maqsini-text {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 200px;
+    justify-content: space-around;
+
+}
+
+.slogan-1 {
+    text-align: center;
+    margin: 50px 0px 50px 0px;
+    font-size: 20px;
+}
+
+.maquinas4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.maquinas4 img {
+    height: auto;
+    width: 250px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 30px;
+    border: gray solid 2px;
+
+}
+
+
+.slide {
+    height: 60%;
+    width: 100%;
+}
+
+.visionini {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 600px);
+    justify-content: center;
+    align-items: center;
+
+}
+
+.vitext {
+    font-size: 19px;
+    margin: 20px;
+}
+
+
+.conocer-mas a {
+    color: white;
+    padding: 10px;
+    background-color: black;
+}
+
+.conocer-mas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video {
+    width: 100%;
+    height: 500px;
+
+}
+
+
+#grilla-p {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 3300px 2300px 2300px 300px;
+    grid-template-areas:
+        "nav nav nav"
+        "productos productos productos"
+        "vision vision vision"
+        "slide slide slide"
+        "footer footer footer";
+
+}
+
+.border-p {
+    border: none;
+}
+
+header-p {
+    grid-area: nav;
+}
+
+#slide-p {
+    grid-area: slide;
+}
+
+#prods-p {
+    grid-area: productos;
+}
+
+
+#vision-p {
+    grid-area: vision;
+}
+
+footer-p {
+    grid-area: footer;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+
+}
+
+.cortadoras {
+    width: 100%;
+    height: 768px;
+
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin-top: 10px;
+
+}
+
+.slide-1 {
+    grid-column: 1/3;
+}
+
+.slide-pp img {
+    width: 1200px;
+
+}
+
+.slide-m {
+    width: 100%;
+}
+
+.footini {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    padding: 10px 20px 10px 20px;
+}
+
+.footnav a {
+    text-decoration: none;
+    color: white;
+}
+
+.footpago img {
+    height: 25px;
+    width: auto;
+}
+
+.footpago {
+    display: inline-block;
+    flex-wrap: wrap;
+    padding: 0 10px 5px 5px;
+}
+
+
+.ig-padre {
+    text-align: center;
+    margin: 50px;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+
+.igini a {
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: none;
+    color: grey;
+}
+
+.footenv img {
+    padding: 0 10px 5px 5px;
+    height: 20px;
+    width: auto;
+}
+
+.footcontact a {
+
+    text-decoration: none;
+    color: white;
+}
+
+.iconfoot img {
+    color: white;
+}
+
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+
+.footsocial {
+    margin-left: 20px;
+}
+
+.footsocial a {
+    text-decoration: none;
+    color: white;
+}
+
+.Copyright,
+.contacto,
+.footittle h3 {
+    color: white;
+
+}
+
+.footpadre {
+    margin: 0 10px 5px 5px;
+}
+
+footer {
+    height: 360px;
+    flex-wrap: wrap;
+}
+
+.padre {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 250px 100px;
+    grid-template-columns: 1fr;
+    gap: 8px;
+
+}
+
+.conteiner {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Copyright {
+    text-align: center;
+}
+
+.img-t {
+    width: 200px;
+}
+
+
+@media all and (min-width:600px) and (max-width:1110px) {
+    #grilla {
+        grid-template-rows: auto auto auto 2100px auto;
+    }
+
+    .visionini {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 600px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+    }
+
+    .vitext {
+        font-size: 20px;
+        margin: 20px;
+    }
+
+    #vision,
+    .slide {
+        height: 50%;
+        width: 100%;
+    }
+
+    .video {
+        width: 100%;
+        height: 500px;
+
+    }
+
+    #grilla-p {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 5000px 3000px 3000px 500px;
+        grid-template-areas:
+            "nav nav nav"
+            "productos productos productos"
+            "vision vision vision"
+            "slide slide slide"
+            "footer footer footer";
+
+
+    }
+
+    .border-p {
+        border: none;
+    }
+
+    header-p {
+        grid-area: nav;
+    }
+
+    #slide-p {
+        grid-area: slide;
+    }
+
+    #prods-p {
+        grid-area: productos;
+    }
+
+
+    #vision-p {
+        grid-area: vision;
+    }
+
+    footer-p {
+        grid-area: footer;
+    }
+
+    .cortadoras {
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cortadoras h3 {
+        text-align: center;
+    }
+
+    .cortadoras p {
+        margin-left: 5px;
+    }
+
+
+    footer {
+        height: 600px;
+    }
+
+    .padre {
+        display: grid;
+        width: 100%;
+
+        display: grid;
+        grid-template-rows: 500px 100px;
+        grid-template-columns: 1fr;
+        gap: 8px;
+
+    }
+
+    .conteiner {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+
+
+    }
+
+    .slide-m {
+        min-width: 600px;
+        max-width: 100%;
+
+    }
+
+}
+
+
+@media all and (min-width:360px) and (max-width:599px) {
+
+    #grilla {
+        grid-template-rows: auto auto auto 25% auto;
+    }
+
+    .visionini {
+        display: grid;
+        grid-template-rows: repeat(2, 300px);
+        grid-template-columns: minmax(350px,599px);
+        justify-content: center;
+        align-items: center;
+        gap: 1px;
+
+
+    .vision-img{
+        min-width: 350px;
+        width: 100%;
+    }
+
+    .vitext {
+        font-size: 10px;
+        margin: 5px;
+    }
+
+    #vision,.slide {
+        min-width: 350px;
+        width: 100%;
+        height: 40%;
+    }
+ }
+    .video {
+        width: 100%;
+        height: 40%;
+
+    }
+
+    #grilla-p {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 5000px 3000px 3000px 500px;
+        grid-template-areas:
+            "nav nav nav"
+            "productos productos productos"
+            "vision vision vision"
+            "slide slide slide"
+            "footer footer footer";
+
+
+    }
+
+    .border-p {
+        border: none;
+    }
+
+    header-p {
+        grid-area: nav;
+    }
+
+    #slide-p {
+        grid-area: slide;
+    }
+
+    #prods-p {
+        grid-area: productos;
+    }
+
+
+    #vision-p {
+        grid-area: vision;
+    }
+
+    footer-p {
+        grid-area: footer;
+    }
+
+    .cortadoras {
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cortadoras h3 {
+        text-align: center;
+    }
+
+    .cortadoras p {
+        margin-left: 3px;
+        font-size: 15px;
+    }
+
+    .cortadoras img{
+       min-width: 340px;
+       width: 100%;
+    }
+
+
+    footer {
+        height: 900px;
+    }
+
+    .padre {
+        width: 100%;
+
+        display: grid;
+        grid-template-rows: 800px 100px;
+        grid-template-columns: 1fr;
+        gap: 8px;
+
+    }
+
+    .conteiner {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+
+
+    }
+
+    .slide-m {
+        min-width: 350px;
+        
+
+    }
+
+    .img-pago{
+        min-width: 340px;
+        width: 100%;
+    }
+}
