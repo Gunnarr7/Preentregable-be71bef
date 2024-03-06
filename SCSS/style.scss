@@ -1,73 +1,102 @@
-#grilla{
-    display: grid;
-    grid-template-columns:1fr;
-    grid-template-rows:50px 700px 900px 2000px 360px ;
-    grid-template-areas:
-    "nav nav nav"
-    "slide slide slide"
-    "productos productos productos"
-    "vision vision vision"
-    "footer footer footer"; 
-}
-.border{
-    border:none;
-}
-header{
-    grid-area: nav;
-}
-#slide{
-    grid-area: slide;
-}
-#prods{
-    grid-area: productos;
-}
-#vision{
-    grid-area: vision;
-}
-footer{
-    grid-area: footer;
-}
-#grilla-p{
-    display: grid;
-    grid-template-columns:1fr 1fr;
-    grid-template-rows:60px 3400px 2200px 2200px 400px ;
-    grid-template-areas:
-    "nav nav nav"
-    "productos productos productos"
-    "vision vision vision"
-    "slide slide slide"
-    "footer footer footer";
+$title-font: normal 15px/1.5 'Nunito', sans-serif;
 
-}
-.border-p{
-    border:none;
+#grilla {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 700px 900px 2000px 360px;
+    grid-template-areas:
+        "nav nav nav"
+        "slide slide slide"
+        "productos productos productos"
+        "vision vision vision"
+        "footer footer footer";
 }
 
-header-p{
+.border {
+    border: none;
+}
+
+header {
     grid-area: nav;
 }
 
-#slide-p{
+#slide {
     grid-area: slide;
 }
 
-#prods-p{
+#prods {
+    grid-area: productos;
+}
+
+#vision {
+    grid-area: vision;
+}
+
+footer {
+    grid-area: footer;
+}
+
+#grilla-p {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 3400px 2200px 2200px 400px;
+    grid-template-areas:
+        "nav nav nav"
+        "productos productos productos"
+        "vision vision vision"
+        "slide slide slide"
+        "footer footer footer";
+
+}
+
+.border-p {
+    border: none;
+}
+
+.header-p {
+    grid-area: nav;
+}
+
+#slide-p {
+    grid-area: slide;
+}
+
+#prods-p {
     grid-area: productos;
 }
 
 
-#vision-p{
+#vision-p {
     grid-area: vision;
 }
 
-footer-p{
+.footer-p {
     grid-area: footer;
 
 }
+
 img.slide-img {
     height: auto;
     width: 100%;
     margin-top: 25px;
+}
+
+.contacto-padre {
+    display: flex;
+    font: $title-font;
+    .contacto-redes{
+        width: 300px;
+    margin-right: 400px;
+        a{
+            text-decoration: none;
+            color: black;
+            list-style: none;
+        }
+        li{
+            list-style: none;
+        }
+
+    }
 }
 
 @import "header";

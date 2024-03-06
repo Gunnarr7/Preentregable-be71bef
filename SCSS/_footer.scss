@@ -1,7 +1,8 @@
 footer {
     background-color: black;
-    height: 360px;
+    height: 500px;
     flex-wrap:wrap;
+    font: $title-font;
 
 
     div.padre {
@@ -24,6 +25,9 @@ footer {
                     a {
                         text-decoration: none;
                         color: white;
+                    }
+                    li{
+                        list-style: none;
                     }
 
 
@@ -66,13 +70,13 @@ footer {
             }
 
             div.footsocial {
-                margin-left: 20px;
+                margin-left: 5px;
 
                 a {
                     text-decoration: none;
                     color: white;
                     display: flex;
-                    justify-content: space-around;
+                
                 }
             }
 

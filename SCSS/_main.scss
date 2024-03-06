@@ -1,8 +1,5 @@
-
-
-
-
 section#prods {
+    font: $title-font;
 
     div.maqsini-img {
         display: flex;
@@ -59,7 +56,7 @@ section#prods {
 }
 
 section#vision {
-   
+   font: $title-font;
 
     div.visionini {
         display: grid;
@@ -97,8 +94,8 @@ section#vision {
     }
 
     .video {
-        width: 100%;
-        height: 500px;
+       height: auto;
+       width: 100%;
     }
 
     div.ig-padre {

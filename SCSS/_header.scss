@@ -4,6 +4,8 @@
 }
 
 .navbar {
+    width: 100%;
+    height: auto;
     display: flex;
     position: fixed;
     z-index: 1;
@@ -17,10 +19,8 @@
 
         a {
             color: black;
-            font-family: 'Nunito', sans-serif;
-            font-size: 16.47px;
+            font: $title-font;
             margin-right: 75.5px;
-            margin-left: 21px;
             text-decoration: none;
             padding-inline: 12px;
         }
@@ -35,4 +35,3 @@
     }
 
 }
-

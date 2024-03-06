@@ -3,19 +3,18 @@
         grid-template-rows: auto auto auto 2100px auto;
     }
 
-    .visionini {
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: 600px;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
+    section#vision {
+        div.visionini {
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: 600px;
+            gap: 8px;
 
-    }
+        }
 
-    .vitext {
-        font-size: 20px;
-        margin: 20px;
+        .vitext {
+            font-size: 20px;
+            margin: 20px;
+        }
     }
 
     #vision,
@@ -33,7 +32,7 @@
     #grilla-p {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 5000px 3000px 3000px 500px;
+        grid-template-rows: auto 6000px 2000px 2000px 500px;
         grid-template-areas:
             "nav nav nav"
             "productos productos productos"
@@ -69,41 +68,43 @@
         grid-area: footer;
     }
 
-    .cortadoras {
-        display: grid;
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-columns: repeat(1, 1fr);
+    section#prods {
+        .cortadoras {
+            display: grid;
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .cortadoras h3 {
+            text-align: center;
+        }
+
+        .cortadoras p {
+            margin-left: 5px;
+        }
+
     }
 
-    .cortadoras h3 {
-        text-align: center;
-    }
-
-    .cortadoras p {
-        margin-left: 5px;
-    }
-
-
-    footer {
+ footer {
+        
         height: 600px;
-    }
+        div.padre {
+            display: grid;
+            width: 100%;
+            grid-template-rows: 500px 100px;
+            grid-template-columns: 1fr;
+            gap: 8px;
 
-    .padre {
-        display: grid;
-        width: 100%;
-        grid-template-rows: 500px 100px;
-        grid-template-columns: 1fr;
-        gap: 8px;
+        }
 
-    }
-
-    .conteiner {
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
+        div.conteiner {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
 
 
+        }
     }
 
     .slide-m {
@@ -120,45 +121,44 @@
         grid-template-rows: auto auto auto 25% auto;
     }
 
-    div.visionini {
-        display: grid;
-        grid-template-rows: repeat(2, 300px);
-        grid-template-columns: minmax(350px, 599px);
-        justify-content: center;
-        align-items: center;
-        gap: 1px;
+
+    section#vision {
+        div.visionini {
+            grid-template-rows: repeat(2, auto);
+            grid-template-columns: minmax(350px, 599px);
+            gap: 1px;
+        }
+
+
+        .vision-img {
+            min-width: 350px;
+            width: 100%;
+
+        }
+
+        div.vitext {
+            font-size: 10px;
+            margin: 5px;
+        }
+
+        #vision,
+        .slide-img {
+            min-width: 350px;
+            width: 100%;
+            height: 40%;
+        }
     }
 
-
-    .vision-img {
-        min-width: 350px;
-        width: 100%;
-
-    }
-
-    div.vitext {
-        font-size: 10px;
-        margin: 5px;
-    }
-
-    #vision,
-    .slide-img {
-        min-width: 350px;
+    .video {
         width: 100%;
         height: 40%;
     }
-}
-
-.video {
-    width: 100%;
-    height: 40%;
-
 
 
     #grilla-p {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 5000px 3000px 3000px 500px;
+        grid-template-rows: auto 5500px 3000px 3500px 500px;
         grid-template-areas:
             "nav nav nav"
             "productos productos productos"
@@ -194,48 +194,95 @@
         grid-area: footer;
     }
 
-    .cortadoras {
-        display: grid;
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-columns: repeat(1, 1fr);
+    section#prods {
+        .cortadoras {
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+
+        .cortadoras h3 {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cortadoras p {
+            margin-left: 3px;
+            font-size: 15px;
+        }
+
+        .cortadoras img {
+            min-width: 340px;
+            width: 100%;
+            
+        }
     }
 
-    .cortadoras h3 {
-        text-align: center;
+    section#vision {
+        .cortadoras {
+            display: grid;
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+
+        .cortadoras h3 {
+            text-align: center;
+        }
+
+        .cortadoras p {
+            margin-left: 3px;
+            font-size: 15px;
+        }
+
+        .cortadoras img {
+            min-width: 340px;
+            width: 100%;
+        }
     }
 
-    .cortadoras p {
-        margin-left: 3px;
-        font-size: 15px;
-    }
+    section#slide-p {
+        .cortadoras {
+            display: grid;
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-columns: repeat(1, 1fr);
 
-    .cortadoras img {
-        min-width: 340px;
-        width: 100%;
-    }
+        }
 
+        .cortadoras h3 {
+            text-align: center;
+        }
+
+        .cortadoras p {
+            margin-left: 3px;
+            font-size: 15px;
+        }
+
+        .cortadoras img {
+            min-width: 340px;
+            width: 100%;
+        }
+    }
 
     footer {
         height: 900px;
-    }
-
-    div.padre {
-        width: 100%;
-
-        display: grid;
-        grid-template-rows: 800px 100px;
-        grid-template-columns: 1fr;
-        gap: 8px;
-
-    }
-
-    div.conteiner {
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
 
 
+        div.padre {
+            width: 100%;
+            grid-template-rows: 800px 100px;
+            grid-template-columns: 1fr;
+            gap: 8px;
+
+        }
+
+        div.conteiner {
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(2, 1fr);
+            flex-direction: column;
+
+        }
     }
 
     .slide-m {
@@ -247,5 +294,8 @@
     .img-pago {
         min-width: 340px;
         width: 100%;
+    }
+    .contacto-padre{
+        flex-direction: column;
     }
 }
