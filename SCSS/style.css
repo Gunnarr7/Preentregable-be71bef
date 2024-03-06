@@ -316,7 +316,7 @@ footer div.padre div.Copyright {
   #grilla-p {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 6000px 2000px 2000px 500px;
+    grid-template-rows: auto 6000px 3000px 5000px 500px;
     grid-template-areas: "nav nav nav" "productos productos productos" "vision vision vision" "slide slide slide" "footer footer footer";
   }
   .border-p {
@@ -348,18 +348,39 @@ footer div.padre div.Copyright {
   section#prods .cortadoras p {
     margin-left: 5px;
   }
+  section#vision .cortadoras {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section#vision .cortadoras h3 {
+    text-align: center;
+  }
+  section#vision .cortadoras p {
+    margin-left: 5px;
+  }
+  section#slide-p .cortadoras {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section#slide-p .cortadoras h3 {
+    text-align: center;
+  }
+  section#slide-p .cortadoras p {
+    margin-left: 5px;
+  }
   footer {
-    height: 600px;
+    height: 800px;
   }
   footer div.padre {
     display: grid;
     width: 100%;
-    grid-template-rows: 500px 100px;
+    grid-template-rows: 500px auto;
     grid-template-columns: 1fr;
     gap: 8px;
   }
-  footer div.conteiner {
-    display: grid;
+  footer div.padre div.conteiner {
     grid-template-rows: 1fr;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
@@ -399,7 +420,7 @@ footer div.padre div.Copyright {
   #grilla-p {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 5500px 3000px 3500px 500px;
+    grid-template-rows: auto 5500px 3000px 4300px 500px;
     grid-template-areas: "nav nav nav" "productos productos productos" "vision vision vision" "slide slide slide" "footer footer footer";
   }
   .border-p {
