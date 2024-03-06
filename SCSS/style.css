@@ -291,7 +291,7 @@ footer div.padre div.Copyright {
   text-align: center;
 }
 
-@media all and (min-width: 600px) and (max-width: 1110px) {
+@media all and (min-width: 800px) and (max-width: 1110px) {
   #grilla {
     grid-template-rows: auto auto auto 2100px auto;
   }
@@ -316,7 +316,7 @@ footer div.padre div.Copyright {
   #grilla-p {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 6000px 3000px 5000px 500px;
+    grid-template-rows: auto 7300px 5000px 5000px 500px;
     grid-template-areas: "nav nav nav" "productos productos productos" "vision vision vision" "slide slide slide" "footer footer footer";
   }
   .border-p {
@@ -384,6 +384,104 @@ footer div.padre div.Copyright {
     grid-template-rows: 1fr;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
+  }
+  .slide-m {
+    min-width: 600px;
+    max-width: 100%;
+  }
+}
+@media all and (min-width: 600px) and (max-width: 799px) {
+  #grilla {
+    grid-template-rows: auto auto auto 2100px auto;
+  }
+  section#vision div.visionini {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 600px;
+    gap: 8px;
+  }
+  section#vision .vitext {
+    font-size: 20px;
+    margin: 20px;
+  }
+  #vision,
+  .slide {
+    height: 50%;
+    width: 100%;
+  }
+  .video {
+    width: 100%;
+    height: 500px;
+  }
+  #grilla-p {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 5000px 3800px 4000px 500px;
+    grid-template-areas: "nav nav nav" "productos productos productos" "vision vision vision" "slide slide slide" "footer footer footer";
+  }
+  .border-p {
+    border: none;
+  }
+  header-p {
+    grid-area: nav;
+  }
+  #slide-p {
+    grid-area: slide;
+  }
+  #prods-p {
+    grid-area: productos;
+  }
+  #vision-p {
+    grid-area: vision;
+  }
+  footer-p {
+    grid-area: footer;
+  }
+  section#prods .cortadoras {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section#prods .cortadoras h3 {
+    text-align: center;
+  }
+  section#prods .cortadoras p {
+    margin-left: 5px;
+  }
+  section#vision .cortadoras {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section#vision .cortadoras h3 {
+    text-align: center;
+  }
+  section#vision .cortadoras p {
+    margin-left: 5px;
+  }
+  section#slide-p .cortadoras {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section#slide-p .cortadoras h3 {
+    text-align: center;
+  }
+  section#slide-p .cortadoras p {
+    margin-left: 5px;
+  }
+  footer {
+    height: 900px;
+  }
+  footer div.padre {
+    width: 100%;
+    grid-template-rows: 800px 100px;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  footer div.padre div.conteiner {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: column;
   }
   .slide-m {
     min-width: 600px;
