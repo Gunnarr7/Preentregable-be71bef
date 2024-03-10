@@ -1,0 +1,38 @@
+section.marca {
+    div.main {
+        div.contacto-padre {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(2, 1fr);
+            margin-bottom: 50px;
+
+            div.contacto-redes {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            div.form_padre {
+                margin-left: auto;
+                margin-right: auto;
+
+                input {
+                    min-width: 350px;
+                    min-height: 40px;
+                    border: solid 2px gray;
+                    background-color: #ffff;
+                }
+
+                textarea {
+                    min-width: 350px;
+                    max-height: 100px;
+                }
+
+                .submit {
+                    background-color: #ffff;
+                    margin-left: 178px;
+                }
+            }
+
+        }
+    }
+}
