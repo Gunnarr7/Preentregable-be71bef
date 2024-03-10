@@ -1,5 +1,7 @@
 $title-font: normal 15px/1.5 'Nunito', sans-serif;
-
+section{
+    background-image: url(../img/fondo-bway.jpg);
+}
 #grilla {
     display: grid;
     grid-template-columns: 1fr;
@@ -39,7 +41,7 @@ footer {
 #grilla-p {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 60px 3400px 2200px 2200px 400px;
+    grid-template-rows: 60px 3200px 2200px 2200px 400px;
     grid-template-areas:
         "nav nav nav"
         "productos productos productos"
@@ -78,30 +80,50 @@ footer {
 img.slide-img {
     height: auto;
     width: 100%;
-    margin-top: 25px;
+    border: solid 1px white;
+    border-radius: 2px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .contacto-padre {
     display: flex;
     font: $title-font;
-    .contacto-redes{
+
+    .contacto-redes {
         width: 300px;
-    margin-right: 400px;
-        a{
+        margin-right: 400px;
+
+        a {
             text-decoration: none;
             color: black;
             list-style: none;
         }
-        li{
+
+        li {
             list-style: none;
         }
 
     }
 }
 
+section.marca {
+    background-color: #ffff;
+}
+
+.main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+
+
 @import "header";
 @import "main";
 @import "productos";
+@import "pf";
+@import "contacto";
 @import "footer";
 
 @import "mediaqueries"

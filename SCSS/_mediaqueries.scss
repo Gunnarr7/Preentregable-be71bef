@@ -471,4 +471,13 @@
     .contacto-padre {
         flex-direction: column;
     }
+    section.marca {
+        div.main {
+            div.contacto-padre {
+                grid-template-rows:repeat(2,1fr);
+                grid-template-columns: 1fr;
+                margin-bottom: 50px;
+            }
+        }
+    }
 }

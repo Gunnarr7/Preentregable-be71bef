@@ -1,3 +1,7 @@
+section {
+  background-image: url(../img/fondo-bway.jpg);
+}
+
 #grilla {
   display: grid;
   grid-template-columns: 1fr;
@@ -32,7 +36,7 @@ footer {
 #grilla-p {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 60px 3400px 2200px 2200px 400px;
+  grid-template-rows: 60px 3200px 2200px 2200px 400px;
   grid-template-areas: "nav nav nav" "productos productos productos" "vision vision vision" "slide slide slide" "footer footer footer";
 }
 
@@ -63,7 +67,10 @@ footer {
 img.slide-img {
   height: auto;
   width: 100%;
-  margin-top: 25px;
+  border: solid 1px white;
+  border-radius: 2px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .contacto-padre {
@@ -81,6 +88,16 @@ img.slide-img {
 }
 .contacto-padre .contacto-redes li {
   list-style: none;
+}
+
+section.marca {
+  background-color: white;
+}
+
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
 }
 
 * {
@@ -143,6 +160,7 @@ section#prods div.slogan-1 {
   text-align: center;
   margin: 50px 0px 50px 0px;
   font-size: 20px;
+  background-color: white;
 }
 section#prods div.maquinas4 {
   display: flex;
@@ -160,6 +178,7 @@ section#prods div.maquinas4 img {
   margin-left: 5px;
   margin-bottom: 30px;
   border: gray solid 2px;
+  background-color: white;
 }
 
 section#vision {
@@ -173,6 +192,7 @@ section#vision div.visionini {
   align-items: center;
 }
 section#vision div.visionini div.vitext {
+  background-color: white;
   font-size: 19px;
   margin: 20px;
 }
@@ -192,7 +212,7 @@ section#vision img.slide-img {
   margin-bottom: 5px;
 }
 section#vision .video {
-  height: auto;
+  height: 500px;
   width: 100%;
 }
 section#vision div.ig-padre {
@@ -213,17 +233,71 @@ img.slide-img {
 }
 
 section.cortadoras {
-  font: normal 15px/1.5 "Nunito", sans-serif;
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(2, 1fr);
   gap: 8px;
   margin-top: 10px;
+  background-color: white;
+  max-width: 1300px;
+  text-align: center;
+  margin: 0 auto;
+  align-items: center;
+  font: normal 15px/1.5 "Nunito", sans-serif;
 }
 section.cortadoras img {
   width: 100%;
   height: 500;
-  border: 1px greenyellow solid;
+  border: 3px #9c0f97 solid;
+}
+section.cortadoras div.text {
+  background-color: white;
+  border: 3px #9c0f97 solid;
+}
+
+div.main main div.conteiner_pf {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-decoration: underline;
+  background-color: white;
+}
+div.main main div.conteiner_pf a.link1-pf {
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+}
+div.main main div.conteiner_pf a.link2-pf {
+  color: gray;
+  text-decoration: none;
+}
+
+section.marca div.main div.contacto-padre {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 50px;
+}
+section.marca div.main div.contacto-padre div.contacto-redes {
+  margin-left: auto;
+  margin-right: auto;
+}
+section.marca div.main div.contacto-padre div.form_padre {
+  margin-left: auto;
+  margin-right: auto;
+}
+section.marca div.main div.contacto-padre div.form_padre input {
+  min-width: 350px;
+  min-height: 40px;
+  border: solid 2px gray;
+  background-color: white;
+}
+section.marca div.main div.contacto-padre div.form_padre textarea {
+  min-width: 350px;
+  max-height: 100px;
+}
+section.marca div.main div.contacto-padre div.form_padre .submit {
+  background-color: white;
+  margin-left: 178px;
 }
 
 footer {
@@ -611,5 +685,10 @@ footer div.padre div.Copyright {
   }
   .contacto-padre {
     flex-direction: column;
+  }
+  section.marca div.main div.contacto-padre {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    margin-bottom: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
