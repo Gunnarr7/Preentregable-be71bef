@@ -564,7 +564,7 @@ footer div.padre div.Copyright {
 }
 @media all and (min-width: 360px) and (max-width: 599px) {
   #grilla {
-    grid-template-rows: auto auto auto 25% auto;
+    grid-template-rows: auto auto auto 35% auto;
   }
   section#vision div.visionini {
     grid-template-rows: repeat(2, auto);
