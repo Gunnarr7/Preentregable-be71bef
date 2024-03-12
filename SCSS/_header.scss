@@ -9,7 +9,6 @@
     display: flex;
     position: fixed;
     z-index: 1;
-    background-color: white;
 
     .navini {
         padding-right: 50px;
@@ -50,8 +49,8 @@
                 }
 
                 50% {
-                    -webkit-transform: scale(2) rotateZ(180deg);
-                    transform: scale(2) rotateZ(180deg);
+                    -webkit-transform: scale(1.5) rotateZ(180deg);
+                    transform: scale(1.5) rotateZ(180deg);
                 }
 
                 100% {
@@ -67,8 +66,8 @@
                 }
 
                 50% {
-                    -webkit-transform: scale(2) rotateZ(180deg);
-                    transform: scale(2) rotateZ(180deg);
+                    -webkit-transform: scale(1.5) rotateZ(180deg);
+                    transform: scale(1.5) rotateZ(180deg);
                 }
 
                 100% {
