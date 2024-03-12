@@ -727,7 +727,7 @@ footer div.padre div.Copyright {
     margin-bottom: 50px;
   }
 }
-@media (hover: hover) {
+@media screen and (min-width: 1500px) {
   .navini div.navbar-nav a:hover {
     color: gray;
     border-bottom: 1px solid black;
