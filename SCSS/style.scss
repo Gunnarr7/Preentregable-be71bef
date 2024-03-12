@@ -5,7 +5,7 @@ section{
 #grilla {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 700px 900px 2000px 360px;
+    grid-template-rows: 50px 700px 900px 2000px 400px;
     grid-template-areas:
         "nav nav nav"
         "slide slide slide"
@@ -41,7 +41,7 @@ footer {
 #grilla-p {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 60px 3400px 2200px 2200px 400px;
+    grid-template-rows: 60px 3400px 2200px 2300px 400px;
     grid-template-areas:
         "nav nav nav"
         "productos productos productos"

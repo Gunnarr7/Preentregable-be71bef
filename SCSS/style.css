@@ -5,7 +5,7 @@ section {
 #grilla {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50px 700px 900px 2000px 360px;
+  grid-template-rows: 50px 700px 900px 2000px 400px;
   grid-template-areas: "nav nav nav" "slide slide slide" "productos productos productos" "vision vision vision" "footer footer footer";
 }
 
@@ -36,7 +36,7 @@ footer {
 #grilla-p {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 60px 3400px 2200px 2200px 400px;
+  grid-template-rows: 60px 3400px 2200px 2300px 400px;
   grid-template-areas: "nav nav nav" "productos productos productos" "vision vision vision" "slide slide slide" "footer footer footer";
 }
 
@@ -125,6 +125,8 @@ section.marca {
   margin-right: 75.5px;
   text-decoration: none;
   padding-inline: 12px;
+  font-size: 16px;
+  font-weight: 50;
 }
 .navbar .navini img {
   width: 100px;
@@ -162,7 +164,6 @@ section#prods div.maqsini-img div.img-envios img {
   border: 4px outset #fd50ff;
   margin-top: 10px;
   background-color: white;
-  opacity: 1;
   transition: 1s ease 0s;
 }
 section#prods div.maqsini-img div.img-envios h3 {
@@ -192,9 +193,9 @@ section#prods div.maquinas4 img {
   margin-right: 5px;
   margin-left: 5px;
   margin-bottom: 30px;
-  border: 4px outset #fd50ff;
-  background-color: white;
   transition: 1s ease 0s;
+  background-color: white;
+  border: 4px outset #fd50ff;
 }
 
 section#vision {
@@ -241,7 +242,8 @@ section#vision div.ig-padre div.igini a {
   font-size: 35px;
   font-weight: bold;
   text-decoration: none;
-  color: grey;
+  color: #a62a9b;
+  text-shadow: -14px 35px 5px #f100f1;
 }
 
 img.slide-img {
@@ -578,7 +580,7 @@ footer div.padre div.Copyright {
     max-width: 100%;
   }
 }
-@media all and (min-width: 360px) and (max-width: 599px) {
+@media all and (min-width: 320px) and (max-width: 599px) {
   #grilla {
     grid-template-rows: auto auto auto 35% auto;
   }
@@ -647,7 +649,6 @@ footer div.padre div.Copyright {
     width: 100%;
   }
   section#vision .cortadoras {
-    display: grid;
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(1, 1fr);
   }
@@ -708,7 +709,7 @@ footer div.padre div.Copyright {
     margin-bottom: 50px;
   }
 }
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1200px) {
   .navini div.navbar-nav a:hover {
     color: gray;
     border-bottom: 1px solid black;
@@ -721,8 +722,8 @@ footer div.padre div.Copyright {
     -moz-transform: scale(1.1);
   }
   div.maquinas4 img:hover {
-    transform: scale(1.4);
-    -webkit-transform: scale(1.4);
-    -moz-transform: scale(1.4);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
   }
 }/*# sourceMappingURL=style.css.map */
