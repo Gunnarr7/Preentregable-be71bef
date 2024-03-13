@@ -637,11 +637,6 @@ footer div.padre div.Copyright {
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(1, 1fr);
   }
-  section#prods img.slide-img-p {
-    margin-top: 25px;
-    height: 100%;
-    width: 100%;
-  }
   section#prods .cortadoras h3 {
     text-align: center;
     margin: 0;
