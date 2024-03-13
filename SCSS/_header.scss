@@ -19,6 +19,7 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        
        
 
         a {
@@ -36,7 +37,7 @@
             width: 100px;
             height: auto;
             margin: 0 0 3px 0;
-            border-bottom: 2px solid black;
+            // border-bottom: 2px solid black;
             -webkit-animation: rotate-scale-up 0.65s linear both;
             animation: rotate-scale-up 0.65s linear both;
 
